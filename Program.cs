@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 //definicion y creacion de un diccionario
 Dictionary<string, int> dep = new Dictionary<string, int>()
 {
@@ -21,8 +20,6 @@ Dictionary<string, int> dep = new Dictionary<string, int>()
     {"Río San Juan",135446},
     {"Rivas",182645}
 };
-
-
 //mostrar el diccionario
 foreach (var item in dep)
     Console.WriteLine($"{item.Key,-20} ==> {item.Value,10:N0}");
@@ -31,6 +28,7 @@ Console.WriteLine($"Poblacion general: {dep.Values.Sum():N0}");
 //Mayor y Menor poblacion
 var minResult = dep.Where(x => x.Value == dep.Values.Min());
 var maxResult = dep.Where(x => x.Value == dep.Values.Max());
+Console.WriteLine($"poblacion General: {dep.Values.Sum():N0}");
 Console.WriteLine($"Menor Población:{minResult.First().Key}");
 Console.WriteLine($"Mayor Población:{maxResult.First().Key}");
 

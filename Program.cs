@@ -33,3 +33,4 @@ Console.WriteLine($"Poblacion general: {dep.Values.Sum():N0}");
 Console.WriteLine($"Población General:{dep.Values.Sum():N0}");
 Console.WriteLine($"Menor Población:{orderDepResult.First().Key}");
 Console.WriteLine($"Mayor Población:{orderDepResult.Last().Key}");
+

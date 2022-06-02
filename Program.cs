@@ -21,8 +21,7 @@ Dictionary<string, int> dep = new Dictionary<string, int>()
     {"Río San Juan",135446},
     {"Rivas",182645}
 };
-//ordenandeo de manuera ascendente
-var orderDepResult = dep.OrderBy(d=>d.Value);
+
 
 //mostrar el diccionario
 foreach (var item in dep)
